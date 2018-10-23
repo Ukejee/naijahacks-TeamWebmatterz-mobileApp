@@ -8,6 +8,7 @@ import android.widget.TextView;
 import android.support.v7.widget.RecyclerView;
 
 import java.util.List;
+import java.util.Locale;
 
 public class TutorAdapter extends RecyclerView.Adapter<TutorAdapter.MyViewHolder> {
 
@@ -49,4 +50,7 @@ public class TutorAdapter extends RecyclerView.Adapter<TutorAdapter.MyViewHolder
     public int getItemCount() {
         return tutorsList.size();
     }
+
+
 }
+
