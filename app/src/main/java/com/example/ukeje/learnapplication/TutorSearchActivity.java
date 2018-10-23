@@ -168,4 +168,6 @@ public class TutorSearchActivity extends AppCompatActivity implements SearchView
 
         myAdapter.notifyDataSetChanged();
     }
+
+
 }

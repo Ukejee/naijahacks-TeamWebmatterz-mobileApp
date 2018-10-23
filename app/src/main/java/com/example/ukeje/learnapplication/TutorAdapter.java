@@ -17,11 +17,13 @@ public class TutorAdapter extends RecyclerView.Adapter<TutorAdapter.MyViewHolder
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView name, location, subjects;
 
+
         public MyViewHolder(View view) {
             super(view);
             name=  view.findViewById(R.id.name);
             subjects =  view.findViewById(R.id.location);
             location = view.findViewById(R.id.subjects);
+
         }
     }
 
@@ -50,6 +52,7 @@ public class TutorAdapter extends RecyclerView.Adapter<TutorAdapter.MyViewHolder
     public int getItemCount() {
         return tutorsList.size();
     }
+
 
 
 }

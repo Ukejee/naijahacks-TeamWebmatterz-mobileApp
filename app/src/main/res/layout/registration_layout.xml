@@ -705,7 +705,8 @@
             android:text="@string/signUp"
             android:textColor="@color/background_color"
             android:textSize="17sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="onClickSubmit"/>
 
         <TextView
             android:id="@+id/already_user"

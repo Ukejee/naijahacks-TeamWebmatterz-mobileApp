@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -26,7 +27,7 @@ public class SignUpActivity extends AppCompatActivity {
         setContentView(R.layout.registration_layout);
     }
 
-    public Tutor onClickSubmit(){
+    public void onClickSubmit(View view){
         name = findViewById(R.id.fullName);
         email = findViewById(R.id.userEmailId);
         phoneNo = findViewById(R.id.mobileNumber);
@@ -41,13 +42,10 @@ public class SignUpActivity extends AppCompatActivity {
 
         TutorSearchActivity sign = new TutorSearchActivity();
         sign.tutorList.add(tutor);
-        sign.myAdapter.notifyDataSetChanged();
 
         Toast.makeText(getApplicationContext(),"Tutor Profile Successfully Updated",Toast.LENGTH_LONG).show();
 
-        Intent intent = new Intent(this,TutorSearchActivity.class);
+        Intent intent = new Intent(this,HireTutorActivity.class);
         startActivity(intent);
-
-        return tutor;
     }
 }
